@@ -9,49 +9,47 @@
 // і додає його в поточний об'єкт car
 
 
-// let car=
-//     {
-// model: 'Mazda',
-// year: 2021,
-// producer: 'Mazda Motor Corporation',
-// tankVolume: '51 liters',
-// horsePower: '187 hp',
-// maxspeed: '240 km',
-// nameDraiver: 'Artur',
+let car=
+    {
+model: 'Mazda',
+year: 2021,
+producer: 'Mazda Motor Corporation',
+tankVolume: '51 liters',
+horsePower: '187 hp',
+maxspeed: '240 km',
+nameDraiver: 'Artur',
 
 
-//   drive: function(){
-//     console.log(`Їдемо зі швидкістю ${this.maxspeed} на годину`);
-// },
+  drive: function(){
+    console.log(`Їдемо зі швидкістю ${this.maxspeed} на годину`);
+},
 
-//  info: function() {
-//     console.log(`model: ${this.model} producer: ${this.producer} year: ${this.year} nameDraiver: ${this.nameDraiver}
-//     tankVolume: ${this.tankVolume} horsePower: ${this.horsePower} maxspeed: ${this.maxspeed}`)
-// },
+ info: function() {
+    console.log(`model: ${this.model} producer: ${this.producer} year: ${this.year} nameDraiver: ${this.nameDraiver}
+    tankVolume: ${this.tankVolume} horsePower: ${this.horsePower} maxspeed: ${this.maxspeed}`)
+},
 
-// increaseMaxSpeed: function  (newSpeed){
-// 		this.maxspeed += newSpeed;
-// 	},
-// 	changeYear: function (newValue){
-// 		this.year = newValue;
-// 	},
+increaseMaxSpeed: function  (newSpeed){
+		this.maxspeed += newSpeed;
+	},
+	changeYear: function (newValue){
+		this.year = newValue;
+	},
 
-// 	addDriver: function (driver){
-// 		this.nameDraiver = carDriver;
-// 	}
-// };
-//  let carDriver = {
-//     	name:'Borus',
-//     };
-
-
-// car.info();
-// car.drive();
-// car.increaseMaxSpeed();
-// car.changeYear();
-// car.addDriver();
+	addDriver: function (driver){
+		this.nameDraiver = carDriver;
+	}
+};
+ let carDriver = {
+    	name:'Borus',
+    };
 
 
+car.info();
+car.drive();
+car.increaseMaxSpeed();
+car.changeYear();
+car.addDriver();
 
 
 
