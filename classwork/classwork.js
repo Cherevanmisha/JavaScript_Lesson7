@@ -122,3 +122,100 @@ car.addDriverthis();
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+// CLASS
+
+
+
+// class Popelyushka{
+//     constructor (name, age, footSize){
+//         this.name = name;
+//         this.age = age;
+//         this.footSize = footSize;
+
+//     }
+//     info(){
+//         console.log(this.name)
+//     }
+// };
+// class Princ {
+//     constructor(name, age, footSize){
+//             this.name = Karl;
+//             this.age = 18;
+//             this.footSize = 38;
+//         }
+//     };
+
+// let popelyushka1= new Popelyushka('Aza',20, 38 );
+// let popelyushka2 = new Popelyushka( 'Rada', 17, 35);
+// let popelyushka3 = new Popelyushka('Galina', 19, 34 );
+// let popelyushka4 = new Popelyushka( 'Veronuka', 18, 41);
+// let popelyushka5 = new Popelyushka( 'Albina', 17, 34);
+// let popelyushka6 = new Popelyushka( 'Olga', 25, 41);
+// let popelyushka7 = new Popelyushka( 'Marta', 35, 31);
+// let popelyushka8 = new Popelyushka('Sofiya', 27, 39);
+// let popelyushka9 = new Popelyushka('Lesy', 45, 35 );
+// let popelyushka10 = new Popelyushka('Anna', 24, 41 );
+
+
+// let arrayOfPopel = [popelyushka1, popelyushka2,popelyushka3,popelyushka4,popelyushka5,
+//     popelyushka6,popelyushka7,popelyushka8,
+//     popelyushka9,popelyushka10 ];
+
+
+
+
+// for (const item of arrayOfPopel ){
+
+//     if(item.footSize === 38 ){
+//         console.log(item);
+//     }
+
+// }
+
+
+// Function
+
+// function Popelyushka (name, age, footSize){
+//     this.name = name;
+//     this.age = age;
+//     this.footSize = footSize;
+// };
+
+// function Princ (name, age, footSize1){
+//     this.name = name;
+//     this.age = age;
+//     this.footSize1 = this.footSize1;
+
+
+//   this.findPopel = function(array){
+//     let find = null;
+//     // find = array.find(item => item.footSize === this.footSize1);
+
+// for( const item of array){
+//     if(item.footSize === this.footSize1);
+//     find=item;
+// }
+// console.log(find);
+
+//   }
+// };
+
+// let popelyushka1= new Popelyushka('Aza',20, 38 );
+// let popelyushka2 = new Popelyushka( 'Rada', 17, 35);
+// let popelyushka3 = new Popelyushka('Galina', 19, 34 );
+// let popelyushka4 = new Popelyushka( 'Veronuka', 18, 41);
+// let popelyushka5 = new Popelyushka( 'Albina', 17, 34);
+// let popelyushka6 = new Popelyushka( 'Olga', 25, 49);
+// let popelyushka7 = new Popelyushka( 'Marta', 35, 31);
+// let popelyushka8 = new Popelyushka('Sofiya', 27, 39);
+// let popelyushka9 = new Popelyushka('Lesy', 45, 35 );
+// let popelyushka10 = new Popelyushka('Anna', 24, 45 );
+
+
+// let arrayOfPopel = [popelyushka1, popelyushka2,popelyushka3,popelyushka4,popelyushka5,
+//     popelyushka6,popelyushka7,popelyushka8,
+//     popelyushka9,popelyushka10 ];
+
+// let princ = new Princ('Karl', 27,45);
+
+//     princ.findPopel(arrayOfPopel);
