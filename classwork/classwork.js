@@ -73,48 +73,51 @@
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 
-
-    let drivers ={name: 'Artur',age:58 };
-
-class Car {
-      constructor (model,year,producer,tankVolume,horsePower,maxspeed,nameDraiver){
-            this.model = model || 'Mazda';
-            this.year = year || 2021;
-            this.producer = producer || 'Mazda Motor Corporation';
-            this.tankVolume = tankVolume || '51 liters';
-            this.horsePower = horsePower || '187 hp';
-            this.maxspeed = maxspeed ||  '240 km';
-            this.nameDraiver = nameDraiver || 'Artur';
-}
-
-drive(){
-    console.log(`Їдемо зі швидкістю ${this.maxspeed} на годину`);
-};
-
-info() {
-    console.log(`model: ${this.model} producer: ${this.producer} year: ${this.year} nameDraiver: ${this.nameDraiver}
-    tankVolume: ${this.tankVolume} horsePower: ${this.horsePower} maxspeed: ${this.maxspeed}`)
-};
-
-increaseMaxSpeed(newSpeed){
-		this.maxspeed += newSpeed;
-	};
-	changeYear(newValue){
-		this.year = newValue;
-	};
-
-	addDriverthis(driver){
-		this.nameDraiver = driver;
-    }
-	};
-
-    let car = new Car('tesla',2017,)
-
-car.info();
-car.drive();
-car.increaseMaxSpeed();
-car.changeYear();
-car.addDriverthis();
+//
+//     let drivers ={name: 'Artur',age:58 };
+//
+// class Car {
+//       constructor (model,year,producer,tankVolume,horsePower,maxspeed,nameDraiver){
+//             this.model = model || 'Mazda';
+//             this.year = year || 2021;
+//             this.producer = producer || 'Mazda Motor Corporation';
+//             this.tankVolume = tankVolume || '51 liters';
+//             this.horsePower = horsePower || '187 hp';
+//             this.maxspeed = maxspeed ||  '240 km';
+//             this.nameDraiver = nameDraiver || 'Artur';
+// }
+//
+// drive(){
+//     console.log(`Їдемо зі швидкістю ${this.maxspeed} на годину`);
+// };
+//
+// info() {
+//     console.log(`model: ${this.model} producer: ${this.producer} year: ${this.year} nameDraiver: ${this.nameDraiver}
+//     tankVolume: ${this.tankVolume} horsePower: ${this.horsePower} maxspeed: ${this.maxspeed}`)
+// };
+//
+// increaseMaxSpeed(newSpeed){
+// 		this.maxspeed += newSpeed;
+//     console.log(newSpeed);
+// };
+// 	changeYear(newValue){
+// 		this.year = newValue;
+//         console.log(newValue)
+// 	};
+//
+// 	addDriverthis(driver){
+// 		this.nameDraiver = driver;
+//         console.log(driver);
+//     }
+// 	};
+//
+// let car2 = new Car('tesla',2017,'tesla motors',"300 hp",'700km','Borus')
+// console.log(car2)
+// car2.info();
+// car2.drive();
+// car2.increaseMaxSpeed(5000);
+// car2.changeYear(2035);
+// car2.addDriverthis('Anton');
 
 
 
@@ -124,27 +127,27 @@ car.addDriverthis();
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 // CLASS
 
-
-
 // class Popelyushka{
-//     constructor (name, age, footSize){
+//     constructor (name, age,footSize){
 //         this.name = name;
 //         this.age = age;
 //         this.footSize = footSize;
-
+//
 //     }
 //     info(){
 //         console.log(this.name)
 //     }
 // };
-// class Princ {
+//     class Princ {
 //     constructor(name, age, footSize){
-//             this.name = Karl;
-//             this.age = 18;
-//             this.footSize = 38;
+//             this.name = name;
+//             this.age = age;
+//             this.footSize = footSize;
 //         }
 //     };
-
+//
+// let princ1 = new Princ('Anna', 18, 35);
+//
 // let popelyushka1= new Popelyushka('Aza',20, 38 );
 // let popelyushka2 = new Popelyushka( 'Rada', 17, 35);
 // let popelyushka3 = new Popelyushka('Galina', 19, 34 );
@@ -155,51 +158,54 @@ car.addDriverthis();
 // let popelyushka8 = new Popelyushka('Sofiya', 27, 39);
 // let popelyushka9 = new Popelyushka('Lesy', 45, 35 );
 // let popelyushka10 = new Popelyushka('Anna', 24, 41 );
-
-
+//
+//
 // let arrayOfPopel = [popelyushka1, popelyushka2,popelyushka3,popelyushka4,popelyushka5,
 //     popelyushka6,popelyushka7,popelyushka8,
 //     popelyushka9,popelyushka10 ];
-
-
-
-
-// for (const item of arrayOfPopel ){
-
-//     if(item.footSize === 38 ){
-//         console.log(item);
+//
+//
+//
+// let prP = (arrayOfPopel, princ1) => {
+//     for (const item of arrayOfPopel) {
+//
+//         if (item.footSize === princ1.footSize) {
+//             return `${item.name}`
+//         }
+//
 //     }
-
-// }
+//
+// };
+// console.log(prP(arrayOfPopel,princ1))
 
 
 // Function
-
+//
 // function Popelyushka (name, age, footSize){
 //     this.name = name;
 //     this.age = age;
 //     this.footSize = footSize;
 // };
-
-// function Princ (name, age, footSize1){
+//
+// function Princ (name, age,footSize1){
 //     this.name = name;
 //     this.age = age;
 //     this.footSize1 = this.footSize1;
-
-
+//
+//
 //   this.findPopel = function(array){
-//     let find = null;
-//     // find = array.find(item => item.footSize === this.footSize1);
-
+//
+//     find = array.find(item => item.footSize === this.footSize1);
+//
 // for( const item of array){
 //     if(item.footSize === this.footSize1);
 //     find=item;
 // }
 // console.log(find);
-
+//
 //   }
 // };
-
+//
 // let popelyushka1= new Popelyushka('Aza',20, 38 );
 // let popelyushka2 = new Popelyushka( 'Rada', 17, 35);
 // let popelyushka3 = new Popelyushka('Galina', 19, 34 );
@@ -210,12 +216,12 @@ car.addDriverthis();
 // let popelyushka8 = new Popelyushka('Sofiya', 27, 39);
 // let popelyushka9 = new Popelyushka('Lesy', 45, 35 );
 // let popelyushka10 = new Popelyushka('Anna', 24, 45 );
-
-
+//
+//
 // let arrayOfPopel = [popelyushka1, popelyushka2,popelyushka3,popelyushka4,popelyushka5,
 //     popelyushka6,popelyushka7,popelyushka8,
 //     popelyushka9,popelyushka10 ];
-
+//
 // let princ = new Princ('Karl', 27,45);
-
+//
 //     princ.findPopel(arrayOfPopel);
